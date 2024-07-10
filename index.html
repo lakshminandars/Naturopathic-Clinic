@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturopathic Clinic</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+     <link rel="icon" type="image/png" href="data:image/jpeg;base64,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">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- navbar -->
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <!-- <a class="navbar-brand me-2" href="https://mdbgo.com/">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="16"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a> -->
+
+      <a class="navbar-brand me-2" href="https://static1.squarespace.com/static/6291604274bc7d0c02445423/t/629169cb9aa74d6fd5a0e29b/1681933147117/">
+        <img
+          src="https://static1.squarespace.com/static/6291604274bc7d0c02445423/t/629169cb9aa74d6fd5a0e29b/1681933147117/"
+          height="45"
+          alt="Logo"
+          loading="lazy"
+          style="margin-top: -3px;"
+        />
+      </a> 
+
+      
+  
+      <!-- Toggle button -->
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <!-- <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+        </ul> -->
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+         <a href="" class="nav m-3 text-secondary">Home</a>
+         <a href=""  class="nav m-3 text-secondary">Home</a>
+         <a href=""  class="nav m-3 text-secondary">Home</a>
+         <a href=""  class="nav m-3 text-secondary">Home</a>
+         <a href=""  class="nav m-3 text-secondary">Contact Us</a>
+         <button data-mdb-ripple-init type="button" class="btn bg-success text-light px-3 ms-5">
+          BOOK NOW
+          </button>
+            
+          
+         
+          
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+  <!-- banner -->
+   <section id="home">
+   <img width="1550px" height="400px" src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/2bfc701c-a23a-4ee1-8cd5-ae9c1aa9e12d/Homepage-edit-First-Image.jpg" alt="img1">
+   <h2 class="overlay">Welcome to Vancouver
+    <br>
+    Naturopathic Clinic
+   </h2>
+   <p class="p1">Your Holistic Health Partner  </p>
+   <button data-mdb-ripple-init type="button" class="btn1 bg-success text-light px-3 me-2">
+    BOOK NOW
+    </button>
+</section> 
+
+<!-- services -->
+ <section id="services">
+<div class="row g-4">
+    <div class="col">
+        <div class="service-box">
+            <div class="services">
+                <i class="fa-solid fa-seedling" style="color: #ffffff;"></i>
+                
+            </div>
+            <p class="p2" style="margin-left: 90px; ">Our Services</p>
+            
+            
+        </div>
+    </div>
+    <div class="col">
+        <div class="service-box">
+            <div class="services">
+                <i class="fa-solid fa-seedling" style="color: #ffffff;"></i>
+            </div>
+            <p class="p2" style="margin-left: 90px; ">Our Services</p>
+            <!-- <p>Architecture, The art and technique of designing and building, as distinguished from the skills associated with construction.</p> -->
+        </div>
+    </div>
+    <div class="col">
+        <div class="service-box">
+            <div class="services">
+                <i class="fa-solid fa-seedling" style="color: #ffffff;"></i>
+            </div>
+            <p class="p2" style="margin-left: 90px; ">Our Services</p>
+            <!-- <p>Architecture, The art and technique of designing and building, as distinguished from the skills associated with construction.</p> -->
+        </div>
+    </div>
+    <div class="col">
+        <div class="service-box">
+            <div class="services">
+                <i class="fa-solid fa-seedling" style="color: #ffffff;"></i>
+            </div>
+            <p class="p2" style="margin-left: 90px; ">Our Services</p>
+            <!-- <p>Architecture, The art and technique of designing and building, as distinguished from the skills associated with construction.</p> -->
+        </div>
+    </div>
+    <div class="col">
+        <div class="service-box">
+            <div class="services">
+                <i class="fa-solid fa-seedling" style="color: #ffffff;"></i>
+            </div>
+            <p class="p2" style="margin-left: 90px; ">Our Services</p>
+            <!-- <p>Architecture, The art and technique of designing and building, as distinguished from the skills associated with construction.</p> -->
+        </div>
+    </div>
+</section>
+
+<!-- colrow -->
+ <section id="more">
+<div class="row1">
+    <div class="col-6">
+        <img src="https://cdn.pixabay.com/photo/2018/08/02/07/50/medical-procedures-3579029_640.jpg" alt="">
+    </div>
+    <div class="col-6">
+        <h3 >Healing Vancouver for Over
+            <br>
+            30 Years
+        </h3>
+
+        <p style="width: 650px; margin-left: 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil molestias sit, consequuntur nam autem fuga incidunt pariatur, commodi dolorum blanditiis deserunt. Esse laborum obcaecati, iste a eius expedita eligendi!
+        Necessitatibus, dolore repellat aspernatur quas pariatur blanditiis mollitia! Consequatur, esse! Tempora itaque alias sed, ipsa totam fuga ab laudantium accusantium excepturi impedit dolorem quo sunt provident mollitia, hic illo. Natus!</p>
+    </div>
+</div>
+<div class="row2">
+    
+    <div class="col-6">
+        <h3 >Healing Vancouver for Over
+            <br>
+            30 Years
+        </h3>
+
+        <p style="width: 650px; margin-left: 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil molestias sit, consequuntur nam autem fuga incidunt pariatur, commodi dolorum blanditiis deserunt. Esse laborum obcaecati, iste a eius expedita eligendi!
+        Necessitatibus, dolore repellat aspernatur quas pariatur blanditiis mollitia! Consequatur, esse! Tempora itaque alias sed, ipsa totam fuga ab laudantium accusantium excepturi impedit dolorem quo sunt provident mollitia, hic illo. Natus!</p>
+    </div>
+    <div class="col-6">
+        <img src="https://cdn.pixabay.com/photo/2024/06/07/14/08/ai-generated-8814733_640.png" alt="">
+    </div>
+</div>
+<div class="row2">
+    <div class="col-6">
+        <img src="https://cdn.pixabay.com/photo/2017/08/01/23/02/doctor-2568481_1280.jpg" alt="">
+    </div>
+    <div class="col-6">
+        <h3 >Healing Vancouver for Over
+            <br>
+            30 Years
+        </h3>
+
+        <p style="width: 650px; margin-left: 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil molestias sit, consequuntur nam autem fuga incidunt pariatur, commodi dolorum blanditiis deserunt. Esse laborum obcaecati, iste a eius expedita eligendi!
+        Necessitatibus, dolore repellat aspernatur quas pariatur blanditiis mollitia! Consequatur, esse! Tempora itaque alias sed, ipsa totam fuga ab laudantium accusantium excepturi impedit dolorem quo sunt provident mollitia, hic illo. Natus!</p>
+    </div>
+</div>
+ </section>
+
+ <!-- footer -->
+  <section id="footer">
+  <h4 style="text-align: center; color: rgb(112, 112, 3); margin: 20px; font-size: 30px;">Latest Article</h4>
+  <div class="row3">
+    <div class="col-4 ">
+        <img width="300px" height="300px" src="https://cdn.pixabay.com/photo/2015/02/26/15/40/doctor-650534_640.jpg" alt="">
+    </div>
+    <div class="col-4  ">
+        <img width="300px" height="300px"  src="https://cdn.pixabay.com/photo/2015/09/07/15/14/hospital-928654_640.jpg" alt="">
+    </div>
+    <div class="col-4 ">
+        <img width="300px" height="300px"  src="https://cdn.pixabay.com/photo/2019/04/03/03/06/treatment-4099432_1280.jpg" alt="">
+    </div>
+  </div>
+</section>
